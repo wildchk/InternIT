@@ -1,1 +1,1 @@
-# index.php
+<a href=/index.html>ссылка</a>
