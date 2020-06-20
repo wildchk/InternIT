@@ -1,1 +1,1 @@
-<a href=/index.html>ссылка</a>
+#<a href=index.html>ссылка</a>
