@@ -86,13 +86,6 @@ require('../function.php');
                 echo '</form>';    
                 echo '</div></div>';   
                 }     
-                if(isset($_GET['id'])) {
-                    for ($i=0; $i < 6; $i++) { 
-                        if ($_GET['id']==$row[$i]['id_vacancy'])
-                        article_vacancy($row, $i);
-                    }
-    
-                }            
     ?>
     <footer>
         <h1>@ by Mikhail Kondrashkin</h1>
