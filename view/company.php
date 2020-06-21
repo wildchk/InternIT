@@ -83,6 +83,21 @@ require('../function.php');
     echo '</form>';    
     echo '</div></div>';   
     }
+    if(isset($_GET['search'])){
+        echo '<div id="content" name="content"><div class="wrapper_content">';   
+                for ($i=0; $i < $count; $i++) { 
+                    if ($_GET['search']==$row[$i]['title']){
+                        article_company($row, $i);
+                        $j++;
+                    }                     
+                } 
+                if ($j==0) {
+                    echo '<div class="search_error" name="content">По вашему запросу ничего не найдено</div>';
+                }
+
+        echo '</div>
+        </div>'; 
+} 
     ?>
     <footer>
         <h1>@ by Mikhail Kondrashkin</h1>
