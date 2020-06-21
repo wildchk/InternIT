@@ -40,7 +40,7 @@ require('function.php');
     </header>
     <div class="index_wrapper">
     <?php 
-            if(!isset($_GET['search'])) {
+            if((!isset($_GET['search']))and(!isset($_GET['id']))) {
                 echo '<div id="content" name="content">
                         <div class="wrapper_content">';   
 
